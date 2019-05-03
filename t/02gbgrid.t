@@ -3,7 +3,7 @@ use strict;
 use lib qw(./lib ../lib);
 use Test;
 
-plan tests => 46;
+plan tests => 47;
 
 # grid->lat/long test for GB module
 # $Revision: 1.2 $
@@ -61,6 +61,11 @@ comp('NZ 003005', '54d 23m 59.37s', '-1d 59m 43.36s' );
 comp('SP 500500', '52d 8m 44.21s', '-1d 16m 9.21s' );
 comp('TG 450023', '52d 33m 46.45s ', '1d 36m 55.01s' );
 
+$point = new Geography::NationalGrid( 'GB',
+	Latitude => 51.5,
+	Longitude => 0.0000001,
+);
+ok( qeq($point->longitude, '0d 0m 0.01s') );
 
 sub qeq {
 	my $rv = 0;

@@ -3,6 +3,8 @@ use strict;
 use vars qw($VERSION);
 ($VERSION) = ('$Revision: 1.6 $' =~ m/([\d\.]+)/);
 
+use Scalar::Util qw(looks_like_number);
+
 use constant MAX_ITERS => 1000;
 use constant PI => 3.141592653589793238462643383279;
 
@@ -70,7 +72,7 @@ sub deg2rad {
 		($d, $m, $s) = @$degrees;
 	} elsif ($degrees =~ m/^\s*(-?\d+)\s*d\s*(\d+)\s*m\s*([\d\.]+)\s*s\s*$/) {
 		($d, $m, $s) = ($1, $2, $3);
-	} elsif ($degrees !~ m/^-?[\d\.]+$/) {
+	} elsif (!looks_like_number($degrees)) {
 		die "deg2rad given an argument of '$degrees' which didn't look like a) a number or b) a string like 52d 5m 32s";
 	}
 	
