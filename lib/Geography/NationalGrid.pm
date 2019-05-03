@@ -4,7 +4,7 @@ use vars qw($VERSION);
 ($VERSION) = ('$Revision: 1.6 $' =~ m/([\d\.]+)/);
 
 use constant MAX_ITERS => 1000;
-use constant PI => 3.141592653897543238452643383279;
+use constant PI => 3.141592653589793238462643383279;
 
 sub new {
 	my $class = shift;
