@@ -1,0 +1,74 @@
+{
+   "abstract" : "Base class to create an object for a point and to transform coordinate systems",
+   "author" : [
+      "P Kent"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Minilla/v3.1.4, CPAN::Meta::Converter version 2.150005",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "Geography-NationalGrid",
+   "no_index" : {
+      "directory" : [
+         "t",
+         "xt",
+         "inc",
+         "share",
+         "eg",
+         "examples",
+         "author",
+         "builder"
+      ]
+   },
+   "prereqs" : {
+      "configure" : {
+         "requires" : {
+            "Module::Build::Tiny" : "0.035"
+         }
+      },
+      "develop" : {
+         "requires" : {
+            "Test::CPAN::Meta" : "0",
+            "Test::MinimumVersion::Fast" : "0.04",
+            "Test::PAUSE::Permissions" : "0.04",
+            "Test::Pod" : "1.41",
+            "Test::Spellunker" : "v0.2.7"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "perl" : "5.008001"
+         }
+      },
+      "test" : {
+         "requires" : {
+            "Test::More" : "0.98"
+         }
+      }
+   },
+   "release_status" : "unstable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/mysociety/Geography-NationalGrid/issues"
+      },
+      "homepage" : "https://github.com/mysociety/Geography-NationalGrid",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/mysociety/Geography-NationalGrid.git",
+         "web" : "https://github.com/mysociety/Geography-NationalGrid"
+      }
+   },
+   "version" : "1.6",
+   "x_authority" : "cpan:MYSOCIETY",
+   "x_contributors" : [
+      "Matthew Somerville <matthew-github@dracos.co.uk>",
+      "P Kent <pkent@cpan.org>"
+   ],
+   "x_serialization_backend" : "JSON::PP version 2.27300_01",
+   "x_static_install" : 1
+}

@@ -1,0 +1,6 @@
+name = "Geography-NationalGrid"
+authority="cpan:MYSOCIETY"
+module_maker="ModuleBuildTiny"
+static_install = "auto"
+license="perl_5"
+

@@ -1,7 +1,7 @@
 package Geography::NationalGrid;
 use strict;
 use vars qw($VERSION);
-($VERSION) = ('$Revision: 1.6 $' =~ m/([\d\.]+)/);
+$VERSION = 1.6;
 
 use Scalar::Util qw(looks_like_number);
 
@@ -358,6 +358,14 @@ transverse Mercator projections, which means you can inherit the internal conver
 routines from this class and you'll have an easy job. Otherwise
 you may need to implement your own conversion.
 
+=head1 AUTHOR
+
+P Kent
+
+=head1 CONTRIBUTORS
+
+Matthew Somerville <matthew@mysociety.org>
+
 =head1 AUTHOR AND COPYRIGHT
 
 Copyright (c) 2002 P Kent. All rights reserved.
@@ -366,7 +374,5 @@ This program is free software; you can redistribute it and/or modify it under th
 Equations for transforming latitude and longitude to, and from, rectangular grid coordinates
 appear on an Ordnance Survey webpage, although they are
 standard coordinate conversion equations - thanks to the OS for clarifying.
-
-$Revision: 1.6 $
 
 =cut

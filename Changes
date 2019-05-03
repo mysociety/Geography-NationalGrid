@@ -1,0 +1,13 @@
+Revision history for Perl extension Geography-NationalGrid
+
+{{$NEXT}}
+
+    - Fix bug with latitude/longitude co-ordinates very close to zero.
+      https://rt.cpan.org/Public/Bug/Display.html?id=11167
+    - Fix value of PI constant.
+      https://rt.cpan.org/Public/Bug/Display.html?id=59675
+
+1.6 2002
+
+    - original version
+
